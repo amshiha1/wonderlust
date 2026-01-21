@@ -277,42 +277,43 @@
     <footer>
         <section id="contact-us">
             <h3>Contact Us <span id="required">(*required)</span></h3>
-            
+
+            <form action="https://wp.zybooks.com/form-viewer.php" autocomplete="on" method="POST" target="_blank">
                 <div>
                     <label for="first-name">First Name<span>*</span></label>
-                    <input>
+                    <input type="text" name="first-name" id="first-name" class="form-control" required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="last-name">Last Name<span>*</span></label>
+                    <input type="text" name="last-name" id="last-name" class="form-control" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="my-email">Email<span>*</span></label>
+                    <input type="email" name="my-email" id="my-email" class="form-control" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="my-phone">Phone<span>*</span></label>
+                    <input type="tel" name="my-phone" id="my-phone" class="form-control" required>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" name="contact-pref" id="pref-email" value="prefer-email" class="form-control" required checked> 
+                        <label for="pref-email">Email</label> 
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" name="contact-pref" id="pref-text" value="prefer-text" class="form-control">
+                        <label for="pref-text">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" name="contact-pref" id="pref-phone" value="prefer-phone" class="form-control"> 
+                        <label for="pref-phone">Phone</label> 
                     </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
-                        <option>Choose</option>
+                    <select id="select-destination" name="select-destination" class="form-control" required>
+                        <option value="">Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
                         <option>Ibiza</option>
@@ -326,8 +327,8 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
-                        <option>Choose</option>
+                    <select id="select-travel-time" name="select-travel-time" class="form-control" required>
+                        <option value="">Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
                         <option>Spring</option>
@@ -335,7 +336,8 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <input type="submit" name="submit" id="submit" value="Submit Form"  class="form-control">
+                </form>
             
         </section>
         <section id="legal">
