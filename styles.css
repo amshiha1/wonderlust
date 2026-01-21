@@ -268,11 +268,11 @@ label, input, legend, select {
     height: 1rem;
     padding: 1.5rem;
     position: absolute;
-    transform: translateX(-250%);
+    transform: translateX(-270%);
     transition: transform 0.3s;
 }
 .sr-only:focus {
-    transform: translateX(0%);
+    transform: translateX(-100%);
 }
 footer {
     background-color: var(--deep-navy);
